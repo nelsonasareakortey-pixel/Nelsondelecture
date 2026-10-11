@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="logo">Admin panel</div><nav><a class="btn ghost" href="/" style="text-decoration:none">← Back to site</a></nav></header>
+<main>
+<div id="stats" class="row"></div><br>
+<div class="tabs" id="tabs">
+ <button class="on" onclick="T('payments',this)">💰 Payments</button>
+ <button onclick="T('users',this)">👥 Users</button>
+ <button onclick="T('materials',this)">📚 Materials</button>
+ <button onclick="T('settings',this)">⚙️ Site settings</button>
+</div>
+<div id="pane"></div>
+</main>
+<script src="admin.js"></script>
+</body></html>
